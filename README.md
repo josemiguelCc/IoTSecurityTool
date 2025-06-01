@@ -5,30 +5,6 @@ Este proyecto es una aplicación web desarrollada con **Flask** que utiliza **Nm
 
 ---
 
-## Tabla de Contenidos
-
-1. [Descripción]
-2. [Características]
-3. [Tecnologías Utilizadas]
-4. [Estructura del Proyecto]
-5. [Requisitos Previos]
-6. [Instalación y Configuración]
-    1. [Clonar el Repositorio]
-    2. [Crear y Activar un Entorno Virtual]
-    3. [Crear `requirements.txt`]
-    4. [Instalar Dependencias]
-    5. [Verificar Instalación de Nmap]
-7. [Uso]
-    1. [Ejecutar la Aplicación] 
-    2. [Acceder a la Interfaz Web]
-    3. [Escanear un Objetivo]
-8. [Notas y Advertencias] 
-9. [Mejoras Futuras]
-10. [Créditos] 
-11. [Licencia] 
-
----
-
 ## Descripción
 
 Esta aplicación web proporciona una interfaz sencilla sobre Flask para ejecutar escaneos de red usando Nmap. Permite:
