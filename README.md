@@ -57,7 +57,8 @@ Está pensada para entornos controlados o educativos. No debe usarse en redes aj
 
 - **Python 3.x**  
 - **Flask**  
-- **python-nmap** (wrapper de Nmap en Python)  
+- **python-nmap** (wrapper de Nmap en Python)
+- **ExploitDB** (base de datos de exploits, instalada como herramienta de línea de comandos) 
 - **Nmap** (instalación nativa en el sistema)  
 - **HTML + Jinja2** (para plantillas)  
 
@@ -74,4 +75,96 @@ PI/
 │   ├── index.html          # Formulario para ingresar la IP/rango
 │   └── resultado.html      # Muestra resultados del escaneo
 └── static/                 # (Opcional) Archivos CSS, JS, imágenes, etc.
+```
 
+
+## Requisitos Previos
+
+Antes de instalar y ejecutar la aplicación, asegúrate de tener instalado lo siguiente en tu sistema:
+
+1. **Git**  
+   - Para clonar el repositorio.  
+   - Verifica con:
+     ```bash
+     git --version
+     ```
+
+2. **Python 3**  
+   - Para ejecutar la aplicación Flask.  
+   - Verifica con:
+     ```bash
+     python3 --version
+     ```
+   - Si en tu sistema el comando es `python`, usa `python --version`.
+
+3. **pip**  
+   - El gestor de paquetes de Python para instalar dependencias.  
+   - Verifica con:
+     ```bash
+     pip --version
+     ```
+
+4. **Virtualenv** (opcional pero recomendado)  
+   - Para aislar las dependencias del proyecto en un entorno virtual.  
+   - Si no lo tienes, instala con:
+     ```bash
+     pip install virtualenv
+     ```
+
+5. **Nmap**  
+   - Herramienta de escaneo de red que utiliza la aplicación.  
+   - En Linux (Debian/Ubuntu):
+     ```bash
+     sudo apt update
+     sudo apt install nmap
+     ```
+   - En macOS (Homebrew):
+     ```bash
+     brew install nmap
+     ```
+   - En Windows:
+     1. Descarga e instala desde https://nmap.org/download.html  
+     2. Asegúrate de agregar la ruta de `nmap.exe` al PATH.  
+   - Verifica con:
+     ```bash
+     nmap --version
+     ```
+
+6. **exploitdb**  
+   - Base de datos de vulnerabilidades pública  
+   - En Linux (Debian/Ubuntu):
+     ```bash
+     sudo apt update
+     sudo apt install exploitdb
+     ```
+     -Verificamos con
+     ```bash
+     searchsploit --version
+     ```
+     
+
+---
+
+## Cómo Descargar e Instalar
+
+Sigue estos pasos **en el orden indicado**:
+
+1. **Clonar el repositorio desde GitHub**  
+   Abre tu terminal y ejecuta:
+   ```bash
+   git clone https://github.com/tu-usuario/tu-repo.git
+   cd tu-repo
+2. **Crear y activar entorno virtual**  
+   Abre tu terminal y ejecuta:
+   ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate
+2. **Instalar dependencias**  
+   Abre tu terminal y ejecuta:
+   ```bash
+   pip install Flask
+   pip install python-nmap
+2. **Inicializar el programa**  
+   Abre tu terminal y ejecuta:
+   ```bash
+   python3 main.py
