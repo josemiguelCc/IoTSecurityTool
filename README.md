@@ -128,7 +128,7 @@ Sigue estos pasos **en el orden indicado**:
 1. **Clonar el repositorio desde GitHub**  
    Abre tu terminal y ejecuta:
    ```bash
-   git clone https://github.com/tu-usuario/tu-repo.git
+   git clone https://github.com/tu-usuario/tu-repo.git](https://github.com/josemiguelCc/IoTSecurityTool
    cd tu-repo
 2. **Crear y activar entorno virtual**  
    Abre tu terminal y ejecuta:
