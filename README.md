@@ -129,7 +129,7 @@ Sigue estos pasos **en el orden indicado**:
    Abre tu terminal y ejecuta:
    ```bash
    git clone https://github.com/josemiguelCc/IoTSecurityTool
-   cd https://github.com/josemiguelCc/IoTSecurityTool
+   cd IoTSecurityTool
 2. **Crear y activar entorno virtual**  
    Abre tu terminal y ejecuta:
    ```bash
