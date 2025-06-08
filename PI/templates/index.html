@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IoTSecurityTool</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f7f9; }
+    .container {
+      max-width: 360px; margin: 5% auto; background: #fff;
+      padding: 2rem; border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h1 { text-align: center; margin-bottom: 1.5rem; }
+    label { font-weight: bold; display: block; margin-bottom: .5rem; }
+    input, button {
+      width: 100%; padding: .5rem; margin-bottom: 1rem;
+      border: 1px solid #ccc; border-radius: 4px;
+    }
+    button {
+      background: #007BFF; color: #fff; border: none;
+      cursor: pointer; font-size: 1rem;
+    }
+    button:hover { background: #0056b3; }
+    .error {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 0.75rem;
+    border-radius: 4px;
+    margin: 0.5rem 0;
+    border: 1px solid #f5c6cb;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>IoTSecurityTool</h1>
+    <form action="/escaneo" method="post">
+      <label for="target">IP / Rango (ej. 127.0.0.1 o 192.168.1.0/24):</label>
+      {% if error %}
+        <div class="error">{{ error }}</div>
+      {% endif %}
+      <input type="text" id="target" name="target"
+             placeholder="127.0.0.1 / 192.168.1.0/24"
+             required />
+      <button type="submit">Escanear</button>
+    </form>
+  </div>
+</body>
+</html>
